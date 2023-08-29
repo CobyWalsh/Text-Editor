@@ -30,7 +30,7 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 const urlsToCache = ["/", "database.js", "editor,js", "header.js", "index.js", "install.js", "htmlRoutes.js", "style.css", "logo.png"];
 self.addEventListener("install", event => {
    event.waitUntil(
-      caches.open("pwa-assets")
+      caches.open("page-cache")
       .then(cache => {
          return cache.addAll(urlsToCache);
       })
@@ -38,3 +38,4 @@ self.addEventListener("install", event => {
 });
 
 registerRoute();
+
