@@ -27,4 +27,14 @@ warmStrategyCache({
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 
 // TODO: Implement asset caching
+const urlsToCache = ["/", "database.js", "editor,js", "header.js", "index.js", "install.js", "htmlRoutes.js", "style.css", "logo.png"];
+self.addEventListener("install", event => {
+   event.waitUntil(
+      caches.open("pwa-assets")
+      .then(cache => {
+         return cache.addAll(urlsToCache);
+      })
+   );
+});
+
 registerRoute();
