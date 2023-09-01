@@ -4,23 +4,26 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-      "start:dev": "",
-      "start": "",
-      "server": "",
-      "build": "",
-      "install": "",
-      "client": ""
+        "start:dev": "",
+        "start": "",
+        "server": "",
+        "build": "",
+        "install": "",
+        "client": ""
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "express": "^4.17.1",
-      "if-env": "^1.0.4"
+        "@babel/runtime": "^7.22.11",
+        "express": "^4.17.1",
+        "if-env": "^1.0.4",
+        "workbox-webpack-plugin": "^7.0.0"
     },
     "devDependencies": {
-      "concurrently": "^5.2.0",
-      "nodemon": "^2.0.4"
+        "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+        "@babel/preset-env": "^7.22.14",
+        "concurrently": "^5.2.0",
+        "nodemon": "^2.0.4"
     }
-  }
-  
+}
