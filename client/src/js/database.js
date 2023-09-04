@@ -1,3 +1,4 @@
+// Initializing the IndexedDB named 'jate' with version 1 and setting up the structure.
 import { openDB } from "idb";
 
 const initdb = async () =>
@@ -12,7 +13,7 @@ const initdb = async () =>
     },
   });
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
+// Defines the function 'putDb' that allows me to add or update data in the indexDB database named 'jate'.
 export const putDb = async (content) => {
   console.log('PUT to the database');
   const jateDb = await openDB('jate', 1);
@@ -24,7 +25,7 @@ export const putDb = async (content) => {
 };
 
 
-// TODO: Add logic for a method that gets all the content from the database
+// Defines the function 'getDb' that allows me to retrieve data from the IndexedDB database named 'jate'. 
 export const getDb = async () => {
   console.error("getDb not implemented");
   const jateDb = await openDB("jate", 1);
