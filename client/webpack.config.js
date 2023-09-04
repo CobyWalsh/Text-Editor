@@ -27,7 +27,7 @@ module.exports = () => {
     new WorkboxPlugin.GenerateSW({
       clientsClaim: true,
       skipWaiting: true,
-      swSrc: './src-sw.js', // Path to your service worker source file
+      swDest: './src-sw.js', // Path to your service worker source file
       swDest: 'service-worker.js', // Destination for the generated service worker
     }),
 
