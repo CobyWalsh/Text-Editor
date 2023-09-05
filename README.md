@@ -8,3 +8,4 @@ In this project I have created a PWA text editor web aplication that can be down
 https://github.com/CobyWalsh/Note-Taker
 
 ## Heroku URL:
+https://text-editor7-b2c3220c1f7e.herokuapp.com/
